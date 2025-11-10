@@ -136,14 +136,13 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=ekyc
-
+```
 
 ⚠️ Important Note:
 🔒 Do not upload this file to GitHub — it contains sensitive credentials.
 🧾 The .gitignore file already includes .env, so it will be automatically ignored by Git.
 ✅ Always keep your .env file secure and private.   
 
-```
 
 ### ⚙️ Step 6: Initialize Database Tables
 
@@ -163,10 +162,13 @@ To start the Streamlit application, run the following command in your terminal:
 
 ```bash
 streamlit run app.py
+```
 
 Once executed successfully, open your browser and navigate to:
 
+```bash
 👉 http://localhost:8501
+```
 
 You can now:
 
@@ -176,7 +178,6 @@ You can now:
 
 🔍 Extract data using OCR-based text recognition
 
-```
 
 ### 🗂️ Project Structure
 
@@ -197,6 +198,7 @@ eKYC/
 ├── requirements.txt # All dependencies for the project
 └── logs/ # Log files for error tracking and monitoring
 
+---
 
 ### 🧾 Logging
 
@@ -218,6 +220,7 @@ logs/ekyc_logs.log
 > ⚠️ **Note:**  
 > The `logs/` directory is **excluded from GitHub** for privacy and security reasons.
 
+---
 
 ### 🚨 Troubleshooting
 
@@ -228,6 +231,7 @@ logs/ekyc_logs.log
 | ⚠️ **Face not detected** | Upload a clear, front-facing photo with proper lighting. |
 | ⚠️ **AttributeError: 'str' object has no attribute 'strftime'** | ✅ Fixed — the current version automatically handles multiple date formats. |
 
+---
 
 ### 🚀 Future Enhancements
 
@@ -238,6 +242,7 @@ logs/ekyc_logs.log
 | 🔜 **Admin Dashboard** | For viewing analytics, user verification logs, and system performance metrics. |
 | 🔜 **REST API Support** | To integrate KYC verification with mobile and third-party applications. |
 
+---
 
 ### 👨‍💻 Author
 
@@ -248,6 +253,7 @@ logs/ekyc_logs.log
 📧 **Email:** [kavanshah2114@gmail.com](mailto:kavanshah2114@gmail.com)  
 🌐 **GitHub:** [Kavan-Shah2114](https://github.com/Kavan-Shah2114)
 
+---
 
 ### 🤝 Contributing
 
@@ -260,6 +266,7 @@ To contribute:
 
 If your work adds value to the project, it will be **merged and credited** accordingly. 🙌
 
+--- 
 
 ### 🛡️ License
 
@@ -269,6 +276,7 @@ You are free to **use**, **modify**, and **distribute** this project — respons
 
 📄 For more details, refer to the [LICENSE](LICENSE) file.
 
+---
 
 ### 🎥 Demo Showcase
 
