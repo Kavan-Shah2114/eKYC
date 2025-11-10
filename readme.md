@@ -181,8 +181,6 @@ You can now:
 
 ### 🗂️ Project Structure
 
-### 🗂️ Project Structure
-
 The folder structure of the **E-KYC** project is organized as follows:
 
 ```text
@@ -252,7 +250,7 @@ logs/ekyc_logs.log
 
 **Kavan Shah**    
 
-💡 Passionate about **AI**, and **Scalable MLOps Solutions**  
+💡 Passionate about **AI** and **Scalable MLOps Solutions**  
 
 📧 **Email:** [kavanshah2114@gmail.com](mailto:kavanshah2114@gmail.com)  
 🌐 **GitHub:** [Kavan-Shah2114](https://github.com/Kavan-Shah2114)
