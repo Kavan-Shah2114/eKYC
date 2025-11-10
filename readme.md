@@ -110,18 +110,18 @@ Ensure you have the following installed:
 git clone https://github.com/Kavan-Shah2114/eKYC.git
 cd eKYC/
 
-### Step 2: **Create and Activate Conda Environment**:
-```sh
+### Step 2: **Create and Activate Conda Environment**
+```bash
 conda create --name ekyc python=3.12 -y
 
 ### Step 3: **Activate the Virtual Environment**:
 - On Windows:
-```sh
-      conda activate ekyc
+```bash
+conda activate ekyc
 
 ### Step 4: **Install the Required Packages**:
-    ```bash
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
 ### 🧩 Step 5: Create a `.env` File for Database Credentials
 
@@ -133,10 +133,10 @@ DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=ekyc
 
-        ⚠️ Important Note:
-        🔒 Do not upload this file to GitHub — it contains sensitive credentials.
-        🧾 The .gitignore file already includes .env, so it will be automatically ignored by Git.
-        ✅ Always keep your .env file secure and private.   
+⚠️ Important Note:
+🔒 Do not upload this file to GitHub — it contains sensitive credentials.
+🧾 The .gitignore file already includes .env, so it will be automatically ignored by Git.
+✅ Always keep your .env file secure and private.   
 
 
 ### ⚙️ Step 6: Initialize Database Tables
@@ -146,8 +146,8 @@ Run the following command to automatically create the required tables (**users**
 ```bash
 python setup_database.py
 
-        🗃️ Note:
-        Make sure your MySQL server is running and the .env file is properly configured before executing this command.
+🗃️ Note:
+Make sure your MySQL server is running and the .env file is properly configured before executing this command.
 
 ### 🔹 Step 7: Run the E-KYC Streamlit Application
 
@@ -160,13 +160,13 @@ Once executed successfully, open your browser and navigate to:
 
 👉 http://localhost:8501
 
-        You can now:
+You can now:
 
-        📤 Upload your ID card and face image
+📤 Upload your ID card and face image
 
-        🧠 Perform face verification
+🧠 Perform face verification
 
-        🔍 Extract data using OCR-based text recognition
+🔍 Extract data using OCR-based text recognition
 
 
 ### 🗂️ Project Structure
@@ -199,74 +199,74 @@ logs/ekyc_logs.log
 ---
 
 #### 📋 Logs Include:
-    - ✅ **Database connection attempts and results**  
-    - ✅ **OCR extraction details**  
-    - ✅ **Face verification success/failure status**  
-    - ✅ **Data insertion or duplicate detection information**
+- ✅ **Database connection attempts and results**  
+- ✅ **OCR extraction details**  
+- ✅ **Face verification success/failure status**  
+- ✅ **Data insertion or duplicate detection information**
 
 ---
 
-    > ⚠️ **Note:**  
-    > The `logs/` directory is **excluded from GitHub** for privacy and security reasons.
+> ⚠️ **Note:**  
+> The `logs/` directory is **excluded from GitHub** for privacy and security reasons.
 
 
 ### 🚨 Troubleshooting
 
-    | 🧩 **Issue** | 💡 **Solution** |
-    |--------------|----------------|
-    | ❌ **Database connection failed** | Ensure MySQL is running and your `.env` file contains the correct credentials. |
-    | ⚠️ **ModuleNotFoundError** | Run `pip install -r requirements.txt` again to install missing dependencies. |
-    | ⚠️ **Face not detected** | Upload a clear, front-facing photo with proper lighting. |
-    | ⚠️ **AttributeError: 'str' object has no attribute 'strftime'** | ✅ Fixed — the current version automatically handles multiple date formats. |
+| 🧩 **Issue** | 💡 **Solution** |
+|--------------|----------------|
+| ❌ **Database connection failed** | Ensure MySQL is running and your `.env` file contains the correct credentials. |
+| ⚠️ **ModuleNotFoundError** | Run `pip install -r requirements.txt` again to install missing dependencies. |
+| ⚠️ **Face not detected** | Upload a clear, front-facing photo with proper lighting. |
+| ⚠️ **AttributeError: 'str' object has no attribute 'strftime'** | ✅ Fixed — the current version automatically handles multiple date formats. |
 
 
 ### 🚀 Future Enhancements
 
-    | 🧠 **Feature** | 📈 **Status / Description** |
-    |----------------|-----------------------------|
-    | ✅ **Sensitive Data Hashing** | Implemented for secure storage of user information. |
-    | 🔜 **Live Webcam-Based Face Detection** | To enable real-time face verification through the user’s webcam. |
-    | 🔜 **Admin Dashboard** | For viewing analytics, user verification logs, and system performance metrics. |
-    | 🔜 **REST API Support** | To integrate KYC verification with mobile and third-party applications. |
+| 🧠 **Feature** | 📈 **Status / Description** |
+|----------------|-----------------------------|
+| ✅ **Sensitive Data Hashing** | Implemented for secure storage of user information. |
+| 🔜 **Live Webcam-Based Face Detection** | To enable real-time face verification through the user’s webcam. |
+| 🔜 **Admin Dashboard** | For viewing analytics, user verification logs, and system performance metrics. |
+| 🔜 **REST API Support** | To integrate KYC verification with mobile and third-party applications. |
 
 
 ### 👨‍💻 Author
 
-    **Kavan Shah**    
+**Kavan Shah**    
 
-    💡 Passionate about **AI**, and **Scalable MLOps Solutions**  
+💡 Passionate about **AI**, and **Scalable MLOps Solutions**  
 
-    📧 **Email:** [kavanshah2114@gmail.com](mailto:kavanshah2114@gmail.com)  
-    🌐 **GitHub:** [Kavan-Shah2114](https://github.com/Kavan-Shah2114)
+📧 **Email:** [kavanshah2114@gmail.com](mailto:kavanshah2114@gmail.com)  
+🌐 **GitHub:** [Kavan-Shah2114](https://github.com/Kavan-Shah2114)
 
 
 ### 🤝 Contributing
 
 Contributions and suggestions are always welcome! 💬  
 
-    To contribute:
-    1. 🍴 **Fork** the repository  
-    2. 🛠️ **Make improvements** or add new features  
-    3. 🔁 **Create a pull request**
+To contribute:
+1. 🍴 **Fork** the repository  
+2. 🛠️ **Make improvements** or add new features  
+3. 🔁 **Create a pull request**
 
-    If your work adds value to the project, it will be **merged and credited** accordingly. 🙌
+If your work adds value to the project, it will be **merged and credited** accordingly. 🙌
 
 
 ### 🛡️ License
 
-    This project is **open-source** under the **MIT License**.  
+This project is **open-source** under the **MIT License**.  
 
-    You are free to **use**, **modify**, and **distribute** this project — responsibly and with proper credit.  
+You are free to **use**, **modify**, and **distribute** this project — responsibly and with proper credit.  
 
-    📄 For more details, refer to the [LICENSE](LICENSE) file.
+📄 For more details, refer to the [LICENSE](LICENSE) file.
 
 
 ### 🎥 Demo Showcase
 
-> “**Upload an ID → Verify Face → Extract Data → Store Securely — all in one go.**”  
+>“**Upload an ID → Verify Face → Extract Data → Store Securely — all in one go.**”  
 
-    Experience the seamless **E-KYC verification process** powered by  
-    🧠 *AI, Computer Vision, and OCR integration* — all in a single streamlined workflow.
+Experience the seamless **E-KYC verification process** powered by  
+🧠 *AI, Computer Vision, and OCR integration* — all in a single streamlined workflow.
 
 
 ## 🧩 E-KYC System Workflow  
