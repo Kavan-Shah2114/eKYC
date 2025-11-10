@@ -1,13 +1,28 @@
-# E-KYC Project
-Welcome to the E-KYC project! This project leverages cutting-edge techniques in computer vision, natural language processing, convolutional neural networks (CNNs), and long short-term memory networks (LSTMs) to facilitate automatic Know Your Customer (KYC) processes. 
+# 🌐 E-KYC (Electronic Know Your Customer) Project 
+Welcome to the **E-KYC (Electronic Know Your Customer)** project!  
+This project leverages **Computer Vision (CV)**, **Optical Character Recognition (OCR)**, and **Deep Learning (Face Embedding Models)** to automate and simplify the Know Your Customer (KYC) verification process.  
+
+--- 
 
 ## Overview
 
-The E-KYC web application provides an interactive user interface where users can upload their ID card (limited to Aadhar and PAN cards at the moment) and a photograph of their face. The app then internally processes the provided ID card to extract the face and matches it with the uploaded photograph. 
+The **E-KYC web application** is built using **Streamlit** and allows users to upload:  
+- An **ID card** (currently supports **Aadhar** and **PAN**)  
+- A **selfie image**
+
+The system automatically:
+1. Detects and extracts the face from the ID card.  
+2. Verifies the extracted face with the uploaded selfie using **DeepFace**.  
+3. Uses **OCR (EasyOCR)** to extract textual information from the ID card.  
+4. Stores the verified and processed data securely in a **MySQL database**, using hashed IDs for privacy.
+
+---
 
 ### Features
 
-1. **Face Verification**: The app computes the face from the provided ID card using Haarcascade and matches it with the uploaded photograph. If the verification status is successful, subsequent operations are carried out; otherwise, an error is generated.
+### 1️⃣ Face Verification  
+- Detects and compares faces using **DeepFace (FaceNet backend)** and **OpenCV**.  
+- If the faces don’t match, the process stops automatically.
    
 ## Face Verification Demo
 
@@ -16,9 +31,25 @@ The E-KYC web application provides an interactive user interface where users can
 
 Herein, I have uploaded an ID card of my dad and an image of myself. As a result, the face verification fails, and as stated above, the subsequent codes do not execute.
 
-2. **Optical Character Recognition (OCR)**: If face verification is successful, the app uses EasyOCR with a predefined threshold value to extract text from the ID card.
-3. **Database Interaction**: The extracted text and face embeddings are checked for duplicacy before being inserted into the database. If the user is already registered, the SQL query is not executed, and the fetched result is returned.
+2. **Optical Character Recognition (OCR)**: - Uses **EasyOCR** to extract text such as Name, DOB, Gender, and ID Number from ID cards.  
+
+---
+
+3. **Database Interaction**: 
+- Data is securely stored in a **MySQL database**.  
+- Prevents duplicate entries using an automatic **duplicate check** mechanism.  
+- Face embeddings and hashed IDs are stored to ensure user privacy.  
+
+---
+
 4. **Face Embeddings**: The app uses FaceNet from DeepFace to retrieve face embeddings, which are also stored in the database.
+
+5. **Security**:  
+- Sensitive data (like ID numbers) are **hashed with SHA256**.  
+- Database credentials are stored securely in a **`.env`** file (not committed to GitHub).  
+- Extensive logging for transparency and debugging.  
+
+---
 
 ## Full Workflow of web app
 
@@ -26,16 +57,22 @@ Herein, I have uploaded an ID card of my dad and an image of myself. As a result
 
 I first uploaded my Aadhar ID and a photo of my dad. The app flagged a warning as face verification failed, and subsequent code didn't execute. Then, I uploaded my own face image, the verification succeeded, and my data was inserted into the database. To check for duplicacy and confirm my data was correctly inserted, I reuploaded my face image. The response indicated that a person with my ID already exists in the database, validating proper database handling and ensuring no data duplicacy.
 
+---
 
-### Technologies Used
+## 🧠 Technologies Used  
 
-- **Computer Vision**: For face detection and verification.
-- **Natural Language Processing**: For text extraction and processing.
-- **Convolutional Neural Networks (CNNs)**: For image processing tasks.
-- **Long Short-Term Memory Networks (LSTMs)**: For handling sequential data.
-- **EasyOCR**: For OCR operations.
-- **DeepFace**: For face embeddings.
-- **Haarcascade**: For detecting faces in ID cards.
+| Technology | Purpose |
+|-------------|----------|
+| **Streamlit** | Interactive web UI |
+| **OpenCV** | Face detection & image processing |
+| **DeepFace (FaceNet)** | Face verification & embeddings |
+| **EasyOCR** | Text extraction from ID cards |
+| **MySQL** | Data storage |
+| **Python-dotenv** | Secure credential handling |
+| **Pandas** | Data visualization and manipulation |
+| **TensorFlow** | Backend for DeepFace models |
+
+---
 
 ## Upcoming Improvements
 
@@ -51,87 +88,248 @@ Ensure you have the following installed:
 
 ## Setup Instructions
 
-1. **Clone the Repository**:
-    ```sh
-    https://github.com/abhishekiiitbh2903/E-KYC-.git
-    cd E-KYC-
+### Step 1: **Clone the Repository**:
+    ```bash
+    https://github.com/Kavan-Shah2114/eKYC.git
+    cd eKYC/
     ```
 
-2. **Create a Virtual Environment**:
-    ```sh
-    python -m venv .venv 
+### Step 2: **Create and Activate Conda Environment**:
+    ```bash
+    conda create --name ekyc python=3.12 -y
     ```
 
-3. **Activate the Virtual Environment**:
+### Step 3: **Activate the Virtual Environment**:
     - On Windows:
-      ```sh
-      .\.venv\Scripts\activate
-      ```
-    - On macOS/Linux:
-      ```sh
-      source .venv/bin/activate
+      ```bash
+      conda activate ekyc
       ```
 
-4. **Install the Required Packages**:
-    ```sh
+### Step 4: **Install the Required Packages**:
+    ```bash
     pip install -r requirements.txt
     ```
 
-5. **Create the `config.toml` File**:
-    In the root directory of the project (same directory as `app.py`), create a file named `config.toml` and add the following content to it:
+### 🧩 Step 5: Create a `.env` File for Database Credentials
 
-    ```toml
-    [database]
-    user = "your_username"
-    password = "your_password"
-    host = "localhost"
-    database = "your_database_name"
-    ```
+In your project’s root directory, create a new file named **`.env`** and add your MySQL credentials as shown below:
 
-    Replace `"your_username"`, `"your_password"`, and `"your_database_name"` with your actual MySQL credentials.
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=ekyc
 
-6. **Run the Application**:
-    ```sh
-    streamlit run app.py
-    ```
-
-## Important Notes
-
-- **Security**: Ensure that your `config.toml` file is included in the `.gitignore` file to prevent sensitive information from being uploaded to any public repository.
-
-- **.gitignore**: The `.gitignore` file should include the following lines to ignore the virtual environment and configuration files:
-
-    ```plaintext
-    # Ignore virtual environment directory
-    .venv/
-    
-    # Ignore config.toml file
-    config.toml
-    ```
-
-## Logging
-
-The application logs various events and errors for easier debugging and monitoring. Logs are stored in the `logs` directory. Ensure this directory exists in your local setup or create it manually if it does not exist.
-
-**Note**: The `logs` directory has not been included in the repository to prevent accidental exposure of sensitive information or potential data breaches from logs related to your local system.
-
-Proper logging practices have been implemented throughout the project to ensure comprehensive error tracking and system monitoring.
+⚠️ Important Note:
+🔒 Do not upload this file to GitHub — it contains sensitive credentials.
+🧾 The .gitignore file already includes .env, so it will be automatically ignored by Git.
+✅ Always keep your .env file secure and private.   
 
 
-## Troubleshooting
+### ⚙️ Step 6: Initialize Database Tables
 
-- **Database Connection Issues**: Ensure your MySQL server is running and the credentials in `config.toml` are correct.
-- **Dependencies**: If you encounter issues with missing packages, ensure all required packages are installed by running `pip install -r requirements.txt`.
+Run the following command to automatically create the required tables (**users** and **aadhar**) in your MySQL database:
 
-Feel free to open an issue if you encounter any problems or have questions about the setup process.
+```bash
+python setup_database.py
+
+🗃️ Note:
+Make sure your MySQL server is running and the .env file is properly configured before executing this command.
+
+### 🔹 Step 7: Run the E-KYC Streamlit Application
+
+To start the Streamlit application, run the following command in your terminal:
+
+```bash
+streamlit run app.py
+
+Once executed successfully, open your browser and navigate to:
+
+👉 http://localhost:8501
+
+You can now:
+
+📤 Upload your ID card and face image
+
+🧠 Perform face verification
+
+🔍 Extract data using OCR-based text recognition
 
 
-## Author
+### 🗂️ Project Structure
 
-This project is authored by Abhishek Singh, a final year B.Tech CSE undergraduate at IIIT Bhagalpur. You can reach me at abhishekrathore1806@gmail.com.
+The folder structure of the **E-KYC** project is organized as follows:
 
-## Contributing
+eKYC/
+│
+├── app.py # Main Streamlit application
+├── preprocess.py # Image preprocessing (OpenCV)
+├── ocr_engine.py # OCR (EasyOCR)
+├── postprocess.py # Text parsing and data extraction
+├── face_verification.py # DeepFace-based face verification logic
+├── sql_connection.py # MySQL connection and database operations
+├── setup_database.py # Script to initialize DB and tables
+│
+├── .env # Environment variables (ignored by Git)
+├── .gitignore # Ignore unnecessary or sensitive files
+├── requirements.txt # All dependencies for the project
+└── logs/ # Log files for error tracking and monitoring
 
-I am open to contributions! If you can work on the possible areas of improvement or have other enhancements in mind, feel free to fork the repository, make your changes, and initiate a pull request. If the changes are legitimate and add value to the project, I will merge them.
 
-Happy coding! 😊
+### 🧾 Logging
+
+All major events — including database connections, OCR results, and face verification outcomes — are automatically logged under:
+
+logs/ekyc_logs.log
+
+
+---
+
+#### 📋 Logs Include:
+- ✅ **Database connection attempts and results**  
+- ✅ **OCR extraction details**  
+- ✅ **Face verification success/failure status**  
+- ✅ **Data insertion or duplicate detection information**
+
+---
+
+> ⚠️ **Note:**  
+> The `logs/` directory is **excluded from GitHub** for privacy and security reasons.
+
+
+### 🚨 Troubleshooting
+
+| 🧩 **Issue** | 💡 **Solution** |
+|--------------|----------------|
+| ❌ **Database connection failed** | Ensure MySQL is running and your `.env` file contains the correct credentials. |
+| ⚠️ **ModuleNotFoundError** | Run `pip install -r requirements.txt` again to install missing dependencies. |
+| ⚠️ **Face not detected** | Upload a clear, front-facing photo with proper lighting. |
+| ⚠️ **AttributeError: 'str' object has no attribute 'strftime'** | ✅ Fixed — the current version automatically handles multiple date formats. |
+
+
+### 🚀 Future Enhancements
+
+| 🧠 **Feature** | 📈 **Status / Description** |
+|----------------|-----------------------------|
+| ✅ **Sensitive Data Hashing** | Implemented for secure storage of user information. |
+| 🔜 **Live Webcam-Based Face Detection** | To enable real-time face verification through the user’s webcam. |
+| 🔜 **Admin Dashboard** | For viewing analytics, user verification logs, and system performance metrics. |
+| 🔜 **REST API Support** | To integrate KYC verification with mobile and third-party applications. |
+
+
+### 👨‍💻 Author
+
+**Kavan Shah**    
+
+💡 Passionate about **AI**, and **Scalable MLOps Solutions**  
+
+📧 **Email:** [kavanshah2114@gmail.com](mailto:kavanshah2114@gmail.com)  
+🌐 **GitHub:** [Kavan-Shah2114](https://github.com/Kavan-Shah2114)
+
+
+### 🤝 Contributing
+
+Contributions and suggestions are always welcome! 💬  
+
+To contribute:
+1. 🍴 **Fork** the repository  
+2. 🛠️ **Make improvements** or add new features  
+3. 🔁 **Create a pull request**
+
+If your work adds value to the project, it will be **merged and credited** accordingly. 🙌
+
+
+### 🛡️ License
+
+This project is **open-source** under the **MIT License**.  
+
+You are free to **use**, **modify**, and **distribute** this project — responsibly and with proper credit.  
+
+📄 For more details, refer to the [LICENSE](LICENSE) file.
+
+
+### 🎥 Demo Showcase
+
+> “**Upload an ID → Verify Face → Extract Data → Store Securely — all in one go.**”  
+
+Experience the seamless **E-KYC verification process** powered by  
+🧠 *AI, Computer Vision, and OCR integration* — all in a single streamlined workflow.
+
+
+## 🧩 E-KYC System Workflow  
+
+Here’s a clear overview of how the **E-KYC application** processes and verifies identity in real-time:  
+
+            ┌──────────────────────────────┐
+            │       Upload ID Card         │
+            └─────────────┬────────────────┘
+                          │
+                          ▼
+               preprocess.py (OpenCV)
+                          │
+                          ▼
+               OCR Engine → EasyOCR
+                          │
+                          ▼
+               extract_text() → Extracts Name, DOB, ID
+                          │
+                          ▼
+            ┌──────────────────────────────┐
+            │       Upload Selfie Image    │
+            └─────────────┬────────────────┘
+                          │
+                          ▼
+             face_verification.py (DeepFace)
+                          │
+                          ▼
+               DeepFace → Compare Embeddings
+                          │
+           ┌──────────────┴──────────────┐
+           │                             │
+    Faces Matched ✅             Faces Mismatch ❌
+           │                             │
+           ▼                             ▼
+
+
+sql_connection.py → Store in MySQL Display Error in Streamlit
+│
+▼
+Streamlit App → Displays Extracted Info, Status & Logs
+
+
+
+💡 **Explanation:**  
+1. The user uploads their **ID card** and **selfie**.  
+2. The system uses **OpenCV** to detect and crop the ID region.  
+3. **EasyOCR** extracts textual data like *Name, DOB, Gender, ID Number*.  
+4. **DeepFace (FaceNet)** compares the extracted face from ID and selfie.  
+5. If both faces match, data is securely stored in the **MySQL** database using **hashed IDs**.  
+6. The **Streamlit UI** displays all extracted information, verification result, and logging insights.
+
+---
+
+## 🧠 Simplified Process Flow  
+
+[Upload ID Card] → preprocess.py → OCR (EasyOCR) → extract_text
+↓
+[Upload Selfie] → face_verification.py → DeepFace → verify match
+↓
+[Match?] → YES → sql_connection.py → store in MySQL
+↓
+Streamlit → Displays extracted info & verification result
+
+
+✅ **Outcome:**  
+- Fully automated ID verification pipeline  
+- Secure database integration  
+- Transparent front-end interaction  
+- Privacy-first (hashed data storage)  
+
+---
+
+## 🖼️ Visual Overview  
+
+If you prefer, you can also upload this as an image in your repo (recommended filename: `architecture.png`) and embed it below:  
+
+```markdown
+![E-KYC System Architecture](https://github.com/Kavan-Shah2114/eKYC/blob/main/assets/architecture.png)
