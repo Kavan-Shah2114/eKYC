@@ -111,22 +111,30 @@ git clone https://github.com/Kavan-Shah2114/eKYC.git
 cd eKYC/
 
 ```
+---
+
 ### Step 2: **Create and Activate Conda Environment**
 ```bash
 conda create --name ekyc python=3.12 -y
 
 ```
+---
+
 ### Step 3: **Activate the Virtual Environment**:
 - On Windows:
 ```bash
 conda activate ekyc
 
 ```
+---
+
 ### Step 4: **Install the Required Packages**:
 ```bash
 pip install -r requirements.txt
 
 ```
+---
+
 ### 🧩 Step 5: Create a `.env` File for Database Credentials
 
 In your project’s root directory, create a new file named **`.env`** and add your MySQL credentials as shown below:
@@ -143,6 +151,7 @@ DB_NAME=ekyc
 🧾 The .gitignore file already includes .env, so it will be automatically ignored by Git.
 ✅ Always keep your .env file secure and private.   
 
+---
 
 ### ⚙️ Step 6: Initialize Database Tables
 
@@ -155,6 +164,7 @@ python setup_database.py
 🗃️ Note:
 Make sure your MySQL server is running and the .env file is properly configured before executing this command.
 
+---
 
 ### 🔹 Step 7: Run the E-KYC Streamlit Application
 
@@ -178,6 +188,7 @@ You can now:
 
 🔍 Extract data using OCR-based text recognition
 
+---
 
 ### 🗂️ Project Structure
 
