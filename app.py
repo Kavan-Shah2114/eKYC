@@ -125,12 +125,6 @@ def main_content(image_file, face_image_file,option):
 
 # Main function setup as previously provided...
 def main():
-    # Initialize connection.
-    conn = st.connection(
-    "local_db",
-    type="sql",
-    url="mysql://db_user:db_password@localhost:3306/ekyc"
-)
     wider_page()
     set_custom_theme()
     option = sidebar_section()

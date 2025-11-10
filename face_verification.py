@@ -81,9 +81,9 @@ def detect_and_extract_face(img):
 
 # ---------- Debugging ----------------
 
-file_path="data/01_raw_data/pan.jpeg"
-img=cv2.imread(file_path)
-detect_and_extract_face(img)
+# file_path="data/01_raw_data/pan.jpeg"
+# img=cv2.imread(file_path)
+# detect_and_extract_face(img)
 
 
 def deepface_face_comparison(image1_path, image2_path):
