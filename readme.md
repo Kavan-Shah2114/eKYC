@@ -150,11 +150,11 @@ Run the following command to automatically create the required tables (**users**
 
 ```bash
 python setup_database.py
+```
 
 🗃️ Note:
 Make sure your MySQL server is running and the .env file is properly configured before executing this command.
 
-```
 
 ### 🔹 Step 7: Run the E-KYC Streamlit Application
 
@@ -181,22 +181,26 @@ You can now:
 
 ### 🗂️ Project Structure
 
+### 🗂️ Project Structure
+
 The folder structure of the **E-KYC** project is organized as follows:
 
+```text
 eKYC/
 │
-├── app.py # Main Streamlit application
-├── preprocess.py # Image preprocessing (OpenCV)
-├── ocr_engine.py # OCR (EasyOCR)
-├── postprocess.py # Text parsing and data extraction
-├── face_verification.py # DeepFace-based face verification logic
-├── sql_connection.py # MySQL connection and database operations
-├── setup_database.py # Script to initialize DB and tables
+├── app.py                 # Main Streamlit application
+├── preprocess.py          # Image preprocessing (OpenCV)
+├── ocr_engine.py          # OCR (EasyOCR)
+├── postprocess.py         # Text parsing and data extraction
+├── face_verification.py   # DeepFace-based face verification logic
+├── sql_connection.py      # MySQL connection and database operations
+├── setup_database.py      # Script to initialize DB and tables
 │
-├── .env # Environment variables (ignored by Git)
-├── .gitignore # Ignore unnecessary or sensitive files
-├── requirements.txt # All dependencies for the project
-└── logs/ # Log files for error tracking and monitoring
+├── .env                   # Environment variables (ignored by Git)
+├── .gitignore             # Ignore unnecessary or sensitive files
+├── requirements.txt       # All dependencies for the project
+└── logs/                  # Log files for error tracking and monitoring
+```
 
 ---
 
@@ -340,6 +344,7 @@ Streamlit App → Displays Extracted Info, Status & Logs
 
 ## 🧠 Simplified Process Flow  
 
+```text
 [Upload ID Card] → preprocess.py → OCR (EasyOCR) → extract_text
 ↓
 [Upload Selfie] → face_verification.py → DeepFace → verify match
@@ -347,7 +352,7 @@ Streamlit App → Displays Extracted Info, Status & Logs
 [Match?] → YES → sql_connection.py → store in MySQL
 ↓
 Streamlit → Displays extracted info & verification result
-
+```
 
 ✅ **Outcome:**  
 - Fully automated ID verification pipeline  
