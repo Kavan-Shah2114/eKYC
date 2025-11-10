@@ -1,0 +1,5 @@
+[2025-11-10 21:04:13,451: INFO: setup_database]: Connected to MySQL server
+[2025-11-10 21:04:13,487: INFO: setup_database]: Database 'ekyc' created or already exists
+[2025-11-10 21:04:13,550: INFO: setup_database]: Table 'users' created or already exists
+[2025-11-10 21:04:13,566: INFO: setup_database]: Table 'aadhar' created or already exists
+[2025-11-10 21:04:13,569: INFO: setup_database]: Database setup completed successfully

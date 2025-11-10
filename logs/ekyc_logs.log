@@ -1,2 +1,699 @@
 [2025-11-10 16:11:30,144: INFO: utils]: yaml  file: config.yaml loaded successfully
 [2025-11-10 16:11:39,186: INFO: utils]: NumExpr defaulting to 8 threads.
+[2025-11-10 21:51:44,224: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 21:57:46,864: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:03:26,594: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:03:26,724: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:03:26,724: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:03:26,724: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:03:26,731: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:03:26,731: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:03:37,306: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:03:37,308: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:03:37,308: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:03:37,311: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:03:51,793: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:03:51,795: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:03:51,797: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:03:51,797: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:03:51,799: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:03:51,801: INFO: app]: Face image loaded.
+[2025-11-10 22:03:51,801: ERROR: app]: No face image uploaded.
+[2025-11-10 22:04:18,013: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:04:18,013: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:04:18,013: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:04:18,013: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:04:18,029: INFO: app]: Face image loaded.
+[2025-11-10 22:04:18,029: INFO: app]: ID card image loaded.
+[2025-11-10 22:04:18,060: INFO: preprocess]: contours are found at, (0, 2, 448, 263)
+[2025-11-10 22:04:18,060: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:04:18,070: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:04:18,071: INFO: face_verification]: Extracting face...
+[2025-11-10 22:04:20,233: INFO: face_verification]: Extracted face saved at: D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:04:20,233: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:04:20,239: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:04:20,239: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:04:20,239: INFO: face_verification]: Verifying the images....
+[2025-11-10 22:04:20,239: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:04:20,239: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:04:21,049: INFO: face_verification]: Faces are verified as the same person
+[2025-11-10 22:04:21,049: INFO: app]: Face verification status: successful.
+[2025-11-10 22:04:21,049: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:04:21,049: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:04:22,762: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:04:23,625: INFO: ocr_engine]: Extracted Text: |TT|Name:|PRIYANKA KUMARI|DOB: 1995-17-06|Female|9147385602|
+[2025-11-10 22:04:23,627: INFO: app]: Text extracted and information parsed from ID card.
+[2025-11-10 22:04:23,631: INFO: sql_connection]: No records found.
+[2025-11-10 22:04:23,635: INFO: sql_connection]: No records found.
+[2025-11-10 22:04:23,635: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:06:39,381: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:06:39,381: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:06:39,384: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:06:39,386: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:06:42,705: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:06:42,706: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:06:42,708: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:06:42,708: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:00,136: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:00,138: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:00,141: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:00,141: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:00,141: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:07:00,141: INFO: app]: Face image loaded.
+[2025-11-10 22:07:00,141: ERROR: app]: No face image uploaded.
+[2025-11-10 22:07:06,477: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:06,477: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:06,477: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:06,477: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:06,477: INFO: app]: Face image loaded.
+[2025-11-10 22:07:06,485: INFO: app]: ID card image loaded.
+[2025-11-10 22:07:06,487: INFO: preprocess]: contours are found at, (1, 2, 572, 338)
+[2025-11-10 22:07:06,487: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:07:06,489: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:07:06,489: INFO: face_verification]: Extracting face...
+[2025-11-10 22:07:07,085: INFO: face_verification]: Extracted face saved at: D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:07,085: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:07,089: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:07,089: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:07:07,089: INFO: face_verification]: Verifying the images....
+[2025-11-10 22:07:07,089: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:07,089: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:37,642: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:37,642: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:37,642: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:37,647: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:37,874: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:37,874: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:37,874: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:37,874: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:37,874: INFO: app]: Face image loaded.
+[2025-11-10 22:07:37,874: INFO: app]: ID card image loaded.
+[2025-11-10 22:07:37,880: INFO: preprocess]: contours are found at, (1, 0, 570, 338)
+[2025-11-10 22:07:37,880: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:07:37,884: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:07:37,886: INFO: face_verification]: Extracting face...
+[2025-11-10 22:07:38,475: INFO: face_verification]: Extracted face saved at: D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:38,475: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:38,479: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:38,479: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:07:38,479: INFO: face_verification]: Verifying the images....
+[2025-11-10 22:07:38,479: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:38,481: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:42,819: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:42,822: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:42,825: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:42,825: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:42,827: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:07:42,827: INFO: app]: Face image loaded.
+[2025-11-10 22:07:42,827: ERROR: app]: No face image uploaded.
+[2025-11-10 22:07:43,018: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:43,018: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:43,018: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:43,018: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:43,025: INFO: app]: Face image loaded.
+[2025-11-10 22:07:43,027: INFO: app]: ID card image loaded.
+[2025-11-10 22:07:43,027: INFO: preprocess]: contours are found at, (1, 0, 570, 338)
+[2025-11-10 22:07:43,027: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:07:43,027: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:07:43,027: INFO: face_verification]: Extracting face...
+[2025-11-10 22:07:43,083: INFO: face_verification]: Extracted face saved at: D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:43,083: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:43,087: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:43,087: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:07:43,087: INFO: face_verification]: Verifying the images....
+[2025-11-10 22:07:43,087: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:07:43,087: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:07:46,850: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:46,853: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:46,853: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:46,853: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:46,853: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:07:46,853: INFO: app]: Face image loaded.
+[2025-11-10 22:07:46,853: ERROR: app]: No face image uploaded.
+[2025-11-10 22:07:48,388: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:48,389: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:48,391: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:48,391: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:52,937: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:52,937: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:52,937: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:52,937: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:52,937: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:07:52,937: INFO: app]: Face image loaded.
+[2025-11-10 22:07:52,937: ERROR: app]: No face image uploaded.
+[2025-11-10 22:07:59,602: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:07:59,602: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:07:59,602: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:07:59,602: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:07:59,609: INFO: app]: Face image loaded.
+[2025-11-10 22:07:59,611: INFO: app]: ID card image loaded.
+[2025-11-10 22:07:59,611: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:07:59,611: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:07:59,611: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:07:59,611: INFO: face_verification]: Extracting face...
+[2025-11-10 22:08:00,200: INFO: face_verification]: Extracted face saved at: D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:08:00,200: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:08:00,200: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:08:00,200: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:08:00,200: INFO: face_verification]: Verifying the images....
+[2025-11-10 22:08:00,200: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:08:00,200: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\extracted_face.jpg
+[2025-11-10 22:14:48,040: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:14:48,074: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:14:48,074: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:14:48,074: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:14:48,080: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:14:48,080: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:14:48,080: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:14:48,080: INFO: app]: Face image loaded.
+[2025-11-10 22:14:48,080: ERROR: app]: No face image uploaded.
+[2025-11-10 22:14:49,968: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:14:49,968: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:14:49,974: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:14:49,976: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:14:58,217: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:14:58,218: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:14:58,220: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:14:58,221: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:14:58,222: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:14:58,222: INFO: app]: Face image loaded.
+[2025-11-10 22:14:58,224: ERROR: app]: No face image uploaded.
+[2025-11-10 22:15:03,752: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:15:03,752: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:15:03,752: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:15:03,752: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:15:03,756: INFO: app]: Face image loaded.
+[2025-11-10 22:15:03,756: INFO: app]: ID card image loaded.
+[2025-11-10 22:15:03,756: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:15:03,756: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:15:03,763: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:16:59,904: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:16:59,939: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:16:59,939: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:16:59,939: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:16:59,939: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:16:59,939: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:16:59,939: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:16:59,939: INFO: app]: Face image loaded.
+[2025-11-10 22:16:59,946: ERROR: app]: No face image uploaded.
+[2025-11-10 22:17:02,417: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:17:02,417: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:17:02,421: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:17:02,421: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:17:07,288: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:17:07,288: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:17:07,294: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:17:07,294: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:17:07,294: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:17:07,294: INFO: app]: Face image loaded.
+[2025-11-10 22:17:07,294: ERROR: app]: No face image uploaded.
+[2025-11-10 22:17:12,121: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:17:12,121: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:17:12,126: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:17:12,126: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:17:12,128: INFO: app]: Face image loaded.
+[2025-11-10 22:17:12,128: INFO: app]: ID card image loaded.
+[2025-11-10 22:17:12,128: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:17:12,128: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:17:12,128: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:17:12,137: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:17:12,137: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:17:12,137: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:17:12,144: INFO: app]: Face verification status: failed.
+[2025-11-10 22:17:17,694: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:17:17,698: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:17:17,698: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:17:17,700: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:17:17,700: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:17:17,700: INFO: app]: Face image loaded.
+[2025-11-10 22:17:17,700: ERROR: app]: No face image uploaded.
+[2025-11-10 22:17:19,360: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:17:19,360: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:17:19,360: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:17:19,360: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:18:16,086: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:18:16,086: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:18:16,088: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:18:16,088: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:18:16,088: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:18:16,088: INFO: app]: Face image loaded.
+[2025-11-10 22:18:16,088: ERROR: app]: No face image uploaded.
+[2025-11-10 22:18:26,603: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:18:26,610: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:18:26,613: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:18:26,613: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:18:26,614: INFO: app]: Face image loaded.
+[2025-11-10 22:18:26,614: INFO: app]: ID card image loaded.
+[2025-11-10 22:18:26,618: INFO: preprocess]: contours are found at, (1, 2, 572, 338)
+[2025-11-10 22:18:26,618: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:18:26,626: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:18:26,629: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:18:26,635: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:18:26,635: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:18:26,637: INFO: app]: Face verification status: failed.
+[2025-11-10 22:21:12,096: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:21:12,125: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:21:12,126: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:21:12,126: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:21:12,126: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:21:12,126: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:21:19,325: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:21:19,326: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:21:19,326: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:21:19,326: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:21:26,535: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:21:26,535: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:21:26,540: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:21:26,540: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:21:26,540: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:21:26,542: INFO: app]: Face image loaded.
+[2025-11-10 22:21:26,542: ERROR: app]: No face image uploaded.
+[2025-11-10 22:21:33,380: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:21:33,383: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:21:33,383: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:21:33,383: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:21:33,383: INFO: app]: Face image loaded.
+[2025-11-10 22:21:33,390: INFO: app]: ID card image loaded.
+[2025-11-10 22:21:33,392: INFO: preprocess]: contours are found at, (1, 2, 572, 338)
+[2025-11-10 22:21:33,392: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:21:33,403: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:21:33,403: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:21:33,406: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:21:33,406: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:21:34,581: INFO: app]: Face verification status: failed.
+[2025-11-10 22:27:06,435: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:27:06,466: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:27:06,468: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:27:06,469: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:27:06,470: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:27:06,470: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:27:14,722: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:27:14,722: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:27:14,724: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:27:14,724: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:27:14,725: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:27:14,725: INFO: app]: Face image loaded.
+[2025-11-10 22:27:14,726: ERROR: app]: No face image uploaded.
+[2025-11-10 22:27:19,687: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:27:19,687: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:27:19,689: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:27:19,690: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:27:19,693: INFO: app]: Face image loaded.
+[2025-11-10 22:27:19,695: INFO: app]: ID card image loaded.
+[2025-11-10 22:27:19,696: INFO: preprocess]: contours are found at, (1, 0, 570, 338)
+[2025-11-10 22:27:19,696: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:27:19,704: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:27:19,705: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:27:19,707: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:27:19,707: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:27:19,892: INFO: app]: Face verification status: failed.
+[2025-11-10 22:30:11,866: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:30:18,453: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:30:18,465: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:30:18,466: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:30:18,467: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:30:18,467: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:30:32,610: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:30:32,610: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:30:32,611: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:30:32,612: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:30:32,614: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:30:32,614: INFO: app]: Face image loaded.
+[2025-11-10 22:30:32,614: ERROR: app]: No face image uploaded.
+[2025-11-10 22:30:36,820: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:30:36,820: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:30:36,822: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:30:36,822: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:30:36,823: INFO: app]: Face image loaded.
+[2025-11-10 22:30:36,825: INFO: app]: ID card image loaded.
+[2025-11-10 22:30:36,832: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:30:36,832: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:30:36,836: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:30:36,838: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:30:36,840: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:30:36,841: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:30:55,130: INFO: app]: Face verification status: successful.
+[2025-11-10 22:30:55,130: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:30:55,130: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:30:56,787: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:30:57,873: INFO: ocr_engine]: Extracted Text: |T|Name:|Adarsh kumar|DOB: 17/06/1995|Male|095237614258|
+[2025-11-10 22:30:57,875: INFO: app]: Text extracted and information parsed from ID card.
+[2025-11-10 22:30:57,878: INFO: sql_connection]: No records found.
+[2025-11-10 22:30:57,879: INFO: sql_connection]: No records found.
+[2025-11-10 22:30:57,880: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:32:01,673: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:32:01,675: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:32:01,676: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:32:01,677: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:32:01,678: INFO: app]: Face image loaded.
+[2025-11-10 22:32:01,680: INFO: app]: ID card image loaded.
+[2025-11-10 22:32:01,682: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:32:01,682: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:32:01,686: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:32:01,686: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:32:01,688: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:32:01,690: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:32:02,349: INFO: app]: Face verification status: successful.
+[2025-11-10 22:32:02,349: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:32:02,350: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:32:03,622: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:32:03,623: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:32:03,625: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:32:03,625: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:32:03,626: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:32:03,628: INFO: app]: Face image loaded.
+[2025-11-10 22:32:03,629: ERROR: app]: No face image uploaded.
+[2025-11-10 22:32:04,219: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:32:05,022: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:32:05,023: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:32:05,024: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:32:05,025: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:32:05,425: INFO: ocr_engine]: Extracted Text: |T|Name:|Adarsh kumar|DOB: 17/06/1995|Male|095237614258|
+[2025-11-10 22:32:05,429: INFO: app]: Text extracted and information parsed from ID card.
+[2025-11-10 22:32:05,432: INFO: sql_connection]: No records found.
+[2025-11-10 22:32:05,433: INFO: sql_connection]: No records found.
+[2025-11-10 22:32:05,433: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:32:09,446: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:32:09,447: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:32:09,447: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:32:09,449: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:32:09,450: INFO: preprocess]: Error reading image: 'NoneType' object has no attribute 'read'
+[2025-11-10 22:32:09,450: INFO: app]: Face image loaded.
+[2025-11-10 22:32:09,450: ERROR: app]: No face image uploaded.
+[2025-11-10 22:32:14,069: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:32:14,070: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:32:14,072: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:32:14,073: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:32:14,074: INFO: app]: Face image loaded.
+[2025-11-10 22:32:14,076: INFO: app]: ID card image loaded.
+[2025-11-10 22:32:14,078: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:32:14,079: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:32:14,083: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:32:14,084: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:32:14,087: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:32:14,087: INFO: app]: Faces extracted and saved.
+[2025-11-10 22:32:14,852: INFO: app]: Face verification status: successful.
+[2025-11-10 22:32:14,852: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:32:14,853: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:32:16,619: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:32:17,527: INFO: ocr_engine]: Extracted Text: |T|Name:|Adarsh kumar|DOB: 17/06/1995|Male|095237614258|
+[2025-11-10 22:32:17,529: INFO: app]: Text extracted and information parsed from ID card.
+[2025-11-10 22:32:17,531: INFO: sql_connection]: No records found.
+[2025-11-10 22:32:17,532: INFO: sql_connection]: No records found.
+[2025-11-10 22:32:17,533: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:40:21,187: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 22:40:27,196: INFO: sql_connection]: Connection established with database
+[2025-11-10 22:40:27,201: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:40:27,201: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:40:27,202: INFO: app]: ID card type selected: PAN
+[2025-11-10 22:40:27,202: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 22:40:31,111: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:40:31,112: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:40:31,114: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:40:31,114: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:40:36,392: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:40:36,393: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:40:36,394: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:40:36,395: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:40:41,454: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:40:41,454: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:40:41,455: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:40:41,456: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:40:42,938: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:40:42,939: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:40:42,939: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:40:42,940: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:40:42,942: INFO: app]: Face image loaded.
+[2025-11-10 22:40:42,944: INFO: app]: ID card image loaded.
+[2025-11-10 22:40:42,956: INFO: preprocess]: contours are found at, (0, 0, 570, 338)
+[2025-11-10 22:40:42,956: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:40:42,964: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:40:44,285: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:40:44,287: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:40:44,287: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 22:40:47,952: INFO: app]: Face verification status: successful.
+[2025-11-10 22:40:47,952: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:40:47,953: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:40:49,546: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:40:50,462: INFO: ocr_engine]: Extracted Text: |T|Name:|Adarsh kumar|DOB: 17/06/1995|Male|095237614258|
+[2025-11-10 22:40:50,463: INFO: app]: OCR extraction completed.
+[2025-11-10 22:40:50,463: INFO: app]: Parsed text_info: {'ID': '', 'Name': '', 'Gender': '', 'DOB': '', 'ID Type': 'AADHAR'}
+[2025-11-10 22:40:50,562: INFO: sql_connection]: No records found.
+[2025-11-10 22:40:50,563: INFO: sql_connection]: No records found.
+[2025-11-10 22:40:50,564: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:40:50,572: ERROR: sql_connection]: Error inserting records into aadhar table: 1048 (23000): Column 'dob' cannot be null
+[2025-11-10 22:40:50,574: INFO: app]: New user record inserted: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[2025-11-10 22:41:36,593: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:41:36,594: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:41:36,596: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:41:36,597: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:41:36,801: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:41:36,801: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:41:36,802: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:41:36,802: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:41:41,481: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:41:41,482: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:41:41,484: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:41:41,485: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:41:41,697: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:41:41,697: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:41:41,698: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:41:41,698: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:41:43,573: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:41:43,573: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:41:43,574: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:41:43,575: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:41:43,578: INFO: app]: Face image loaded.
+[2025-11-10 22:41:43,584: INFO: app]: ID card image loaded.
+[2025-11-10 22:41:43,587: INFO: preprocess]: contours are found at, (0, 0, 720, 540)
+[2025-11-10 22:41:43,587: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:41:43,593: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:41:43,659: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:41:43,662: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:41:43,662: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 22:41:44,328: INFO: app]: Face verification status: successful.
+[2025-11-10 22:41:44,328: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:41:44,329: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:41:46,029: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:41:47,928: INFO: ocr_engine]: Extracted Text: |Government of India |Thouto Bharath Kumar|DOB|15/01/1992|Doa|Male|
+[2025-11-10 22:41:47,929: INFO: app]: OCR extraction completed.
+[2025-11-10 22:41:47,929: INFO: app]: Parsed text_info: {'ID': 'MaleGovernment of IndiaThouto Bharath Kumar', 'Name': 'Thouto Bharath Kumar', 'Gender': 'Male', 'DOB': datetime.datetime(1992, 1, 15, 0, 0), 'ID Type': 'AADHAR'}
+[2025-11-10 22:41:48,016: INFO: sql_connection]: No records found.
+[2025-11-10 22:41:48,017: INFO: sql_connection]: No records found.
+[2025-11-10 22:41:48,017: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:41:48,042: INFO: sql_connection]: Inserted records successfully into aadhar table.
+[2025-11-10 22:41:48,043: INFO: app]: New user record inserted: 72a44a3d4995187ecb46c7c87b8ec3a3c7b575718cd21f25f45b51538a911ea7
+[2025-11-10 22:43:00,084: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:43:00,085: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:43:00,087: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:43:00,089: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:43:00,292: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:43:00,292: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:43:00,293: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:43:00,294: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:43:05,274: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:43:05,274: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:43:05,276: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:43:05,276: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:43:05,479: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:43:05,480: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:43:05,481: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:43:05,481: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:43:06,888: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 22:43:06,888: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 22:43:06,889: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 22:43:06,890: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 22:43:06,894: INFO: app]: Face image loaded.
+[2025-11-10 22:43:06,901: INFO: app]: ID card image loaded.
+[2025-11-10 22:43:06,905: INFO: preprocess]: contours are found at, (133, 54, 743, 466)
+[2025-11-10 22:43:06,906: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 22:43:06,915: INFO: app]: ID card ROI extracted.
+[2025-11-10 22:43:06,972: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:43:06,975: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 22:43:06,975: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 22:43:07,614: INFO: app]: Face verification status: successful.
+[2025-11-10 22:43:07,614: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 22:43:07,615: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 22:43:09,136: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 22:43:10,721: INFO: ocr_engine]: Extracted Text: |Governmentonindia|Abhishek Tiwari|DOB|07/05/2002|MALE|8|8173 2997 3675|
+[2025-11-10 22:43:10,722: INFO: app]: OCR extraction completed.
+[2025-11-10 22:43:10,722: INFO: app]: Parsed text_info: {'ID': '8173 2997 3675', 'Name': 'Abhishek Tiwari', 'Gender': 'MALE', 'DOB': datetime.datetime(2002, 5, 7, 0, 0), 'ID Type': 'AADHAR'}
+[2025-11-10 22:43:10,808: INFO: sql_connection]: No records found.
+[2025-11-10 22:43:10,809: INFO: sql_connection]: No records found.
+[2025-11-10 22:43:10,809: INFO: sql_connection]: No duplicate records found.
+[2025-11-10 22:43:10,816: INFO: sql_connection]: Inserted records successfully into aadhar table.
+[2025-11-10 22:43:10,817: INFO: app]: New user record inserted: b067b80ed084c4b2383fdbc96815945a35aad3d00481bb1feb25429cd1ab0b47
+[2025-11-10 23:00:01,569: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:03:38,587: INFO: utils]: yaml  file: config.yaml loaded successfully
+[2025-11-10 23:03:45,599: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:03:45,603: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:03:45,604: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:03:45,604: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:03:45,605: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:03:58,381: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:03:58,382: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:03:58,382: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:03:58,383: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:03:58,383: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:03,806: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:03,807: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:03,808: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:03,808: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:03,809: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:05,820: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:05,821: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:05,821: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:05,822: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:05,823: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:05,825: INFO: app]: Face image loaded.
+[2025-11-10 23:04:05,839: INFO: app]: ID card image loaded.
+[2025-11-10 23:04:05,847: INFO: preprocess]: contours are found at, (45, 32, 984, 523)
+[2025-11-10 23:04:05,848: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 23:04:05,868: INFO: app]: ID card ROI extracted.
+[2025-11-10 23:04:07,224: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:04:07,226: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:04:07,226: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_original.jpg
+[2025-11-10 23:04:11,067: INFO: app]: Face verification status: failed.
+[2025-11-10 23:04:27,492: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:27,493: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:27,493: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:27,497: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:27,497: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:27,697: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:27,698: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:27,699: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:27,700: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:27,700: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:33,774: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:33,775: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:33,776: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:33,778: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:33,779: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:33,979: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:33,980: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:33,981: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:33,982: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:33,982: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:38,916: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:38,917: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:38,918: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:38,920: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:38,920: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:39,119: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:39,120: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:39,120: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:39,122: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:39,122: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:40,255: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:04:40,255: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:04:40,256: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:04:40,257: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:04:40,257: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:04:40,259: INFO: app]: Face image loaded.
+[2025-11-10 23:04:40,266: INFO: app]: ID card image loaded.
+[2025-11-10 23:04:40,271: INFO: preprocess]: contours are found at, (133, 54, 743, 466)
+[2025-11-10 23:04:40,271: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 23:04:40,283: INFO: app]: ID card ROI extracted.
+[2025-11-10 23:04:40,342: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:04:40,343: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:04:40,344: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 23:04:40,990: INFO: app]: Face verification status: successful.
+[2025-11-10 23:04:40,990: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 23:04:40,991: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 23:04:42,679: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 23:04:44,612: INFO: ocr_engine]: Extracted Text: |Governmentonindia|Abhishek Tiwari|DOB|07/05/2002|MALE|8|8173 2997 3675|
+[2025-11-10 23:04:44,613: INFO: app]: OCR extraction completed.
+[2025-11-10 23:04:44,614: INFO: app]: Parsed text_info: {'ID': '', 'Name': '', "Father's Name": '', 'DOB': '', 'ID Type': 'PAN'}
+[2025-11-10 23:04:44,791: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:04:44,793: INFO: sql_connection]: No record found in 'users' table.
+[2025-11-10 23:04:44,819: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:04:44,821: INFO: sql_connection]: No record found in 'users' table.
+[2025-11-10 23:04:44,822: INFO: sql_connection]: \u2705 No duplicate found in 'users' table.
+[2025-11-10 23:04:44,834: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:04:44,838: ERROR: sql_connection]: \u274c Error inserting record into 'users' table: 1048 (23000): Column 'dob' cannot be null
+[2025-11-10 23:04:44,839: INFO: app]: New user record inserted: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[2025-11-10 23:05:13,045: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:13,047: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:13,050: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:13,055: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:05:13,056: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:05:13,298: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:13,298: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:13,299: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:13,301: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:05:13,302: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:05:19,344: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:19,345: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:19,346: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:19,347: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:05:19,348: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:05:19,543: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:19,544: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:19,544: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:19,545: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:05:19,545: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:05:20,599: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:20,599: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:20,601: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:20,602: INFO: app]: ID card type selected: PAN
+[2025-11-10 23:05:20,603: INFO: app]: Header set for PAN Card registration.
+[2025-11-10 23:05:20,605: INFO: app]: Face image loaded.
+[2025-11-10 23:05:20,610: INFO: app]: ID card image loaded.
+[2025-11-10 23:05:20,615: INFO: preprocess]: contours are found at, (133, 54, 743, 466)
+[2025-11-10 23:05:20,615: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 23:05:20,622: INFO: app]: ID card ROI extracted.
+[2025-11-10 23:05:20,679: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:20,680: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:20,680: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 23:05:21,318: INFO: app]: Face verification status: successful.
+[2025-11-10 23:05:21,318: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 23:05:21,318: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 23:05:22,899: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 23:05:23,748: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:23,750: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:23,751: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:23,754: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 23:05:23,754: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 23:05:23,757: INFO: app]: Face image loaded.
+[2025-11-10 23:05:23,769: INFO: app]: ID card image loaded.
+[2025-11-10 23:05:23,776: INFO: preprocess]: contours are found at, (133, 54, 743, 466)
+[2025-11-10 23:05:23,777: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 23:05:23,796: INFO: app]: ID card ROI extracted.
+[2025-11-10 23:05:23,871: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:23,873: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:23,873: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 23:05:24,254: INFO: app]: Face verification status: successful.
+[2025-11-10 23:05:24,254: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 23:05:24,255: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 23:05:25,105: INFO: ocr_engine]: Extracted Text: |Governmentonindia|Abhishek Tiwari|DOB|07/05/2002|MALE|8|8173 2997 3675|
+[2025-11-10 23:05:25,107: INFO: app]: OCR extraction completed.
+[2025-11-10 23:05:25,108: INFO: app]: Parsed text_info: {'ID': '', 'Name': '', "Father's Name": '', 'DOB': '', 'ID Type': 'PAN'}
+[2025-11-10 23:05:26,020: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 23:05:26,210: INFO: app]: Loaded DB config: host=localhost, user=root, database=ekyc
+[2025-11-10 23:05:26,212: INFO: app]: Page layout set to wider configuration.
+[2025-11-10 23:05:26,213: INFO: app]: Custom theme applied to Streamlit app.
+[2025-11-10 23:05:26,216: INFO: app]: ID card type selected: AADHAR
+[2025-11-10 23:05:26,217: INFO: app]: Header set for Aadhar Card registration.
+[2025-11-10 23:05:26,233: INFO: app]: Face image loaded.
+[2025-11-10 23:05:26,246: INFO: app]: ID card image loaded.
+[2025-11-10 23:05:26,259: INFO: preprocess]: contours are found at, (133, 54, 743, 466)
+[2025-11-10 23:05:26,260: INFO: utils]: File exists at D:\CV PROJECT\eKYC\data\02_intermediate_data\contour_id.jpg
+[2025-11-10 23:05:26,277: INFO: app]: ID card ROI extracted.
+[2025-11-10 23:05:26,358: INFO: utils]: File exists at data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:26,361: INFO: preprocess]: Image saved successfully: data\02_intermediate_data\face_image.jpg
+[2025-11-10 23:05:26,361: INFO: app]: Faces extracted and saved: selfie=data\02_intermediate_data\face_image.jpg, id_face=temp_face.jpg
+[2025-11-10 23:05:27,589: INFO: app]: Face verification status: successful.
+[2025-11-10 23:05:27,589: INFO: ocr_engine]: Text Extraction Started...
+[2025-11-10 23:05:27,589: WARNING: easyocr]: Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2025-11-10 23:05:28,936: INFO: ocr_engine]: Extracted Text: |Governmentonindia|Abhishek Tiwari|DOB|07/05/2002|MALE|8|8173 2997 3675|
+[2025-11-10 23:05:28,937: INFO: app]: OCR extraction completed.
+[2025-11-10 23:05:28,938: INFO: app]: Parsed text_info: {'ID': '8173 2997 3675', 'Name': 'Abhishek Tiwari', 'Gender': 'MALE', 'DOB': datetime.datetime(2002, 5, 7, 0, 0), 'ID Type': 'AADHAR'}
+[2025-11-10 23:05:29,427: INFO: ocr_engine]: Inside Try-Catch...
+[2025-11-10 23:05:31,073: INFO: ocr_engine]: Extracted Text: |Governmentonindia|Abhishek Tiwari|DOB|07/05/2002|MALE|8|8173 2997 3675|
+[2025-11-10 23:05:31,074: INFO: app]: OCR extraction completed.
+[2025-11-10 23:05:31,074: INFO: app]: Parsed text_info: {'ID': '8173 2997 3675', 'Name': 'Abhishek Tiwari', 'Gender': 'MALE', 'DOB': datetime.datetime(2002, 5, 7, 0, 0), 'ID Type': 'AADHAR'}
+[2025-11-10 23:05:31,522: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:05:31,532: INFO: sql_connection]: \u2705 Record fetched successfully from 'aadhar' table.
+[2025-11-10 23:05:31,552: INFO: sql_connection]: \u2705 Database connection established successfully.
+[2025-11-10 23:05:31,554: INFO: sql_connection]: \u2705 Record fetched successfully from 'aadhar' table.
+[2025-11-10 23:05:31,556: INFO: sql_connection]: \u26a0\ufe0f Duplicate record found in 'aadhar' table.
